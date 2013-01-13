@@ -1,13 +1,16 @@
 #!/bin/sh
 
-# find source files we care
+echo "clean up ..."
+rm -f cscope.po.out cscope.in.out tags cscope.out
+
+echo "find source files we care ..."
 find $PWD -name "*.c" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.java" -o -name "*.jsp" -o -name "*.rb" >cscope.files
 
-# build cscope files
+echo "build cscope files ..."
 cscope -k -b -q -R -i cscope.files
 
-# clean up
-rm -f cscope.files cscope.po.out cscope.in.out
+echo "clean up ..."
+rm -f cscope.files 
 
-# create ctags 
+echo "create ctags ..."
 ctags -R *
