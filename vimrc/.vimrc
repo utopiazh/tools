@@ -7,6 +7,8 @@ set ts=4 "tabstop
 set et   "expandtab
 set tw=78 "textwidth
 
+set backspace=indent,eol,start
+
 set incsearch
 set hlsearch
 set cursorline  "show underscore line at cursor
