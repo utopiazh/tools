@@ -4,7 +4,7 @@ echo "clean up ..."
 rm -f cscope.po.out cscope.in.out tags cscope.out
 
 echo "find source files we care ..."
-find $PWD -name "*.c" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.java" -o -name "*.jsp" -o -name "*.rb" >cscope.files
+find $PWD -name "*.c" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.hxx" -o -name "*.cxx" -o -name "*.java" -o -name "*.jsp" -o -name "*.rb" >cscope.files
 
 echo "build cscope files ..."
 cscope -k -b -q -R -i cscope.files
