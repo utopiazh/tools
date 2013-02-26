@@ -5,6 +5,9 @@ set sm "showmatch
 set sw=4 "shifwidth
 set ts=4 "tabstop
 set et   "expandtab
+
+set wrap "set nowrap
+"set tw=0
 set tw=78 "textwidth
 
 set backspace=indent,eol,start
@@ -34,4 +37,5 @@ endif
 
 " Plugin
 call pathogen#infect()
+
 
