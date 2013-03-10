@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ "$1" != "off" ]; then
+  # External Screen as HDMI, Laptop below
+  echo "Dual Screen on"
+  xrandr --output VGA1 --off  
+  xrandr --output HDMI1 --primary --mode 1920x1080
+  xrandr --output LVDS1 --off
+  xrandr --output LVDS1 --mode 1600x900 --right-of HDMI1
+else
+  # External Screen off, Laptop primary
+  echo "Dual Screen off"
+  xrandr --output HDMI1 --off
+  xrandr --output LVDS1 --primary --mode 1600x900
+fi
