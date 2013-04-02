@@ -55,4 +55,5 @@ set foldlevel=100
 set showcmd
 set showmode
 
-
+" for EasyMotion
+let g:EasyMotion_leader_key = '<leader>'

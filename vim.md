@@ -9,6 +9,25 @@ __Resize window__
     :vertical resize +5
     :vertical resize -5
 
+## Editing
+
+__EasyMotion__ (DROPPED)
+
+    git clone git@github.com:Lokaltog/vim-easymotion.git
+
+
+Add into .vimrc
+
+    let g:EasyMotion_leader_key = '<leader>'
+
+Set leader key:
+    
+    let mapleader='\'
+
+Enable easymotion:
+    
+    \\w
+ 
 ## Buffer Management
 
 __bufkill__
@@ -51,7 +70,7 @@ __Cscope__
 
 Config cscope
 
-Download  http://cscope.sourceforge.net/cscope_maps.vim and put to plugin dir
+    Download http://cscope.sourceforge.net/cscope_maps.vim and put to plugin dir
 
 ## FileType
 
