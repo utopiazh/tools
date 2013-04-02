@@ -25,14 +25,14 @@ set hlsearch
 
 " show cursor location
 set ruler
-set cursorline  "show underscore line at cursor
+"set cursorline  "show underscore line at cursor
 
 set number      "show line number
 set autoread    "autoreload when file is changed
 
 set fileencoding=utf-8
 
-colorschem desert
+"colorschem delek
 
 let java_highlight_all=1
 let java_highlight_functions="style"
@@ -55,18 +55,4 @@ set foldlevel=100
 set showcmd
 set showmode
 
-"" omnicompletion
-"filetype plugin on
-"set ofu=syntaxcomplete#Complete
-"
-"
-"" Update javacompelet
-"" Only do this part when compiled with support for autocommands.
-"if has("autocmd")
-"  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-"endif
-"
-"setlocal completefunc=javacomplete#CompleteParamsInfo
-"inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
-"inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
-"
+
