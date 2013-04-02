@@ -28,21 +28,21 @@ __AutoComplete__
 
 Autocomplete with key:
 
-- <c-x><c-u>
+    <c-x><c-u>
 
-- <c-p>
+    <c-p>
 
-- <c-n>
+    <c-n>
 
 Autocomplete with tab:
 
 - install SuperTab && AutoComplPop 
     
-    cd ~/.vim/bundle
+     cd ~/.vim/bundle
 
-    git clone git@github.com:vim-scripts/AutoComplPop.git
+     git clone git@github.com:vim-scripts/AutoComplPop.git
 
-    git clone git@github.com:ervandew/supertab.git
+     git clone git@github.com:ervandew/supertab.git
 
 __Rename__
 
