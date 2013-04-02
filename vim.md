@@ -11,7 +11,7 @@ __Resize window__
 
 ## Buffer Management
 
-Install bufkill:
+__bufkill__
 
     cd ~/.vim/bundle
     git clone git@github.com:vim-scripts/bufkill.vim.git
@@ -21,33 +21,40 @@ Install bufkill:
 
 ## Open files
 
-(1) Install fuzzy finder
+__fuzzyfinder__
 
     cd ~/.vim/bundle
     git clone git@github.com:vim-scripts/L9.git
     git clone git@github.com:vim-scripts/FuzzyFinder.git
 
-:FufFile, browse the dir
 
-:FufFile **/FileName.java: find the target file
+Usage:
 
-(2) Install NERDTree
+    :FufFile, browse the dir
+
+    :FufFile **/FileName.java: find the target file
+
+__NERDTree__
 
     cd ~/.vim/bundle
     git clone git@github.com:scrooloose/nerdtree.git
 
 ## Source browsing
 
-(1) SrcExpl
+__SrcExpl__
 
     git clone git@github.com:wesleyche/SrcExpl.git
 
 :SrcExpl : enable preview window
 
-(2) Cscope
+__Cscope__
 
 Config cscope
 
-1. download  http://cscope.sourceforge.net/cscope_maps.vim
-2. put to plugin dir
+Download  http://cscope.sourceforge.net/cscope_maps.vim and put to plugin dir
 
+## FileType
+
+__Markdown__
+
+    git clone git@github.com:tpope/vim-markdown.git
