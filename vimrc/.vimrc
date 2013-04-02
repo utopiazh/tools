@@ -1,3 +1,6 @@
+" Plugin
+call pathogen#infect()
+
 syntax on
 set ai "autoindent
 set sm "showmatch
@@ -35,7 +38,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" Plugin
-call pathogen#infect()
-
+" omnicompletion
+filetype plugin on
+set ofu=syntaxcomplete#Complete
 

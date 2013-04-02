@@ -1,12 +1,20 @@
 #!/bin/sh
-if [ "$1" != "off" ]; then
-  # External Screen as HDMI, Laptop below
-  echo "Dual Screen on"
+if [ "$1" = "desktop" ]; then
+
+  echo "Dual Screen desktop as main window"
   xrandr --output VGA1 --off  
   xrandr --output HDMI1 --primary --mode 1920x1080
   xrandr --output LVDS1 --off
   xrandr --output LVDS1 --mode 1600x900 --right-of HDMI1
-else
+
+elif [ "$1" = "laptop" ]; then
+  echo "Dual Screen laptop as main window"
+  xrandr --output VGA1 --off  
+  xrandr --output LVDS1 --off
+  xrandr --output LVDS1 --primary --mode 1600x900
+  xrandr --output HDMI1 --mode 1920x1080 --left-of LVDS1
+
+elif [ "$1" = "off" ]; then
   # External Screen off, Laptop primary
   echo "Dual Screen off"
   xrandr --output HDMI1 --off
