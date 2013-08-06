@@ -1,0 +1,11 @@
+#!/bin/sh
+
+epoch=$1
+
+# get the first ten characters as epoch in seconds
+epoch2s=$(echo $epoch |cut -c1-10)
+
+date_cmd="date -d @$epoch2s"
+date=$($date_cmd)
+
+echo "$epoch --> $date"

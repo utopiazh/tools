@@ -14,6 +14,8 @@ set sw=4 "shifwidth
 set ts=4 "tabstop
 set et   "expandtab
 
+"set so=50
+
 set wrap "set nowrap
 "set tw=0
 set tw=78 "textwidth
@@ -27,12 +29,12 @@ set hlsearch
 set ruler
 "set cursorline  "show underscore line at cursor
 
-set number      "show line number
+"set number      "show line number
 set autoread    "autoreload when file is changed
 
 set fileencoding=utf-8
 
-"colorschem delek
+colorschem desert
 
 let java_highlight_all=1
 let java_highlight_functions="style"
@@ -56,4 +58,15 @@ set showcmd
 set showmode
 
 " for EasyMotion
-let g:EasyMotion_leader_key = '<leader>'
+"let g:EasyMotion_leader_key = '<leader>'
+"
+let g:EclimDisabled = 1
+
+
+if has("autocmd")
+ autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+ autocmd Filetype java setlocal completefunc=javacomplete#Complete
+endif
+
+inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+nmap ZZ :qa<CR>
